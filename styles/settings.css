@@ -1,0 +1,30 @@
+@font-face{
+    font-family: 'Ovo', serif;
+    font-weight: normal;
+    src:url("/fonts/Ovo/Ovo-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:'Quattrocento Sans', sans-serif;
+    font-weight: normal;
+    src: url("/fonts/QuattrocentoSans/QuattrocentoSans-Regular.ttf") format("truetype");
+}
+
+:root {
+    --orangeLight:rgb(251, 194, 143);
+    --orangeMid:rgb(244, 169, 114) ;
+    --brownOrange:rgb(213, 152, 108) ;
+    --yellowOrange:rgb(223, 171, 82) ;
+    --cream: rgb(248, 236, 218);
+    --brown: rgb(78, 55, 5);
+}
+
+:root {
+    --p-font:'Quattrocento Sans', sans-serif;
+}
+
+body {
+    background-color:var(--orangeLight);
+    font-family: 'Ovo', serif;
+    color: rgb(78, 55, 5);
+}

@@ -1,0 +1,47 @@
+
+body {
+    color: var(--cream);
+}    
+       
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.h1--brownOrange {
+    color: var(--brownOrange);
+}
+
+.h1--cream {
+    color: var(--cream);
+}
+
+.sunquote {
+    font-size:3rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+    bottom: 1rem;
+}
+
+p {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+li a {
+    font-family: var(--p-font);
+    text-transform: uppercase;
+    text-decoration:none;
+    color: var(--cream);
+}

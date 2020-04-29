@@ -1,0 +1,99 @@
+body {
+    background-color: var(--orangeMid);
+}
+
+.contact-form {
+    width: 50vw;
+    height: 200px;
+    background-color: orange;
+}
+
+.film-photo {
+    background-image: url('/images/summerflowers.jpeg');
+    /* background-color: orangered; */
+    width:100vw;
+    height:300px;
+}
+
+.projects {
+    background-color: var(--orangeLight);
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-area: projects;
+    box-sizing: border-box;
+}
+
+.projects__cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects__h1 {
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.sunrise {
+    padding: 2rem;
+    text-align: end;
+    display: grid;
+    grid-area: sun;
+    background-image: url('/images/sun.svg');
+}
+
+.sunrise__text {
+    
+}
+
+.sunrise__h1 {
+    margin: 2rem;
+}
+
+.sunrise__h2 {
+    margin: 2rem;
+}
+
+.yellow-orange {
+    background-color: var(--yellowOrange);
+    display: grid;
+    grid-area: contact;
+}
+
+.quote {
+    display: grid;
+    grid-area: quote;
+    background-color: var(--yellowOrange);
+}
+
+footer {
+    background-color: var(--yellowOrange);
+    display: grid;
+    grid-area: footer;
+    padding: 2rem 0rem 2rem;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 200px 500px 300px 900px 900px 200px;
+    grid-template-columns: 1.5fr 2fr 2fr;
+    grid-template-areas:
+    'header header header'
+    'sun sun sun'
+    'fade fade fade'
+    'projects projects projects'
+    'quote contact contact'
+    'footer footer footer';
+}
+
+.fade {
+    background-color: var(--yellowOrange);
+    grid-area: fade;
+    background: linear-gradient(-135deg, transparent 75%, var(--brownOrange) 75%),
+    linear-gradient(135deg, transparent 75%, var(--orangeLight) 75%);
+    background-size:  8em 8em, 8em 8em;
+    background-repeat: round; 
+
+/* section - sunrise - orange mid 
+/* section - projects - orange light
+/* section - yellow orange
+/* section contact form - background image with colour block on top 
