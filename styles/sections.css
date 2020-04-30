@@ -8,12 +8,6 @@ body {
     background-color: orange;
 }
 
-.film-photo {
-    background-image: url('/images/summerflowers.jpeg');
-    /* background-color: orangered; */
-    width:100vw;
-    height:300px;
-}
 
 .projects {
     background-color: var(--orangeLight);
@@ -59,11 +53,6 @@ body {
     grid-area: contact;
 }
 
-.quote {
-    display: grid;
-    grid-area: quote;
-    background-color: var(--yellowOrange);
-}
 
 footer {
     background-color: var(--yellowOrange);
@@ -74,15 +63,16 @@ footer {
 
 body {
     display: grid;
-    grid-template-rows: 200px 500px 300px 900px 900px 200px;
-    grid-template-columns: 1.5fr 2fr 2fr;
+    grid-template-rows: 200px 500px 300px 1100px 500px 900px 300px 200px;
     grid-template-areas:
-    'header header header'
-    'sun sun sun'
-    'fade fade fade'
-    'projects projects projects'
-    'quote contact contact'
-    'footer footer footer';
+    'header'
+    'sun'
+    'fade'
+    'projects'
+    'image'
+    'contact'
+    'fade2'
+    'footer';
 }
 
 .fade {
@@ -92,6 +82,16 @@ body {
     linear-gradient(135deg, transparent 75%, var(--orangeLight) 75%);
     background-size:  8em 8em, 8em 8em;
     background-repeat: round; 
+}
+
+.fade2 {
+    background-color: var(--yellowOrange);
+    grid-area: fade;
+    background: linear-gradient(-135deg, transparent 75%, var(--brownOrange) 75%),
+    linear-gradient(135deg, transparent 75%, var(--orangeLight) 75%);
+    background-size:  8em 8em, 8em 8em;
+    background-repeat: round; 
+}
 
 /* section - sunrise - orange mid 
 /* section - projects - orange light
