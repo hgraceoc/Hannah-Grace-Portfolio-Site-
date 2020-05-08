@@ -54,18 +54,18 @@ footer {
     background-color: var(--yellowOrange);
     display: grid;
     grid-area: footer;
-    padding: 2rem 0rem 2rem;
+    padding: 3rem 0rem 2rem;
 }
 
 body {
     display: grid;
-    grid-template-rows: 200px 500px 300px 1100px 500px 900px 300px 200px;
+    grid-template-rows: 200px 500px 300px 1100px 600px 900px 300px 500px;
     grid-template-areas:
     'header'
     'sun'
     'fade'
     'projects'
-    'image'
+    'yella'
     'contact'
     'fade2'
     'footer';

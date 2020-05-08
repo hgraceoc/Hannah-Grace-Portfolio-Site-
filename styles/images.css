@@ -11,6 +11,7 @@
 
 .sunsvg {
     fill: var(--brownOrange);
+    stroke-opacity: 0;
 }
 
 
@@ -27,7 +28,19 @@
 	} */
 
 
+.yella {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .image {
+    width:60%;
+    height:80%;
+    padding: 1vw 3vw 1vw 1vw;
+} 
+
+.imageflowers {
     width: 100%;
     height: 100%;
     object-fit: cover; 
