@@ -9,11 +9,6 @@
     bottom: 2%;
 }
 
-.sunsvg {
-    fill: var(--brownOrange);
-    stroke-opacity: 0;
-}
-
 
 /* 
     -webkit-animation: rotation 40s infinite linear;
@@ -38,12 +33,32 @@
     width:60%;
     height:80%;
     padding: 1vw 3vw 1vw 1vw;
+    position: relative;
 } 
+
+.image .text{
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    bottom:50%;
+    background-color: var(--orangeMid);
+    padding: 3vw;
+}
+
+.orangeblock {
+    background-color: var(--orangeMid);
+    position: relative;
+    display: inline;
+}
 
 .imageflowers {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}
+
+.sunshinesvg {
+    display: flex;
 }
 
 /* .flowers__img {
