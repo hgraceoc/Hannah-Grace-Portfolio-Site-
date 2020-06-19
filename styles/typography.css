@@ -1,6 +1,7 @@
 
 body {
     color: var(--cream);
+    font-family: 'Go';
 }    
        
 h1 {
@@ -40,8 +41,12 @@ p {
 }
 
 li a {
-    font-family: var(--p-font);
-    text-transform: uppercase;
+    font-family: 'Goudy', serif;
     text-decoration:none;
     color: var(--cream);
+    font-size: 2rem;
+}
+
+.footer__links li a {
+    color: var(--brownOrange);
 }
