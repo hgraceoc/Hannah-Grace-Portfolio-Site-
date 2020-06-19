@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--orangeMid);
     width:100vw;
@@ -45,14 +46,14 @@ footer {
 
 body {
     display: grid;
-    grid-template-rows: 200px 400px 300px 900px 600px 600px 300px 500px;
+    grid-template-rows: 200px 400px 300px 600px 600px 300px 400px;
     grid-template-areas:
     'header'
     'sun'
     'fade'
     'projects'
     'yella'
-    'contact'
+    
     'fade2'
     'footer';
 }

@@ -13,7 +13,6 @@
 
 .projects__cards {
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
     padding: 0;
 }
@@ -37,13 +36,13 @@
 }
 
 .project__image {
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
-    width:250px;
-    height: 350px;
+    width:350px;
+    height: 250px;
     margin: auto;
 }
 
@@ -59,6 +58,10 @@
     padding: 1rem;
 }
 
-
+@media (max-width: 800px) {
+    .project__item3 {
+      display: none;
+    }
+  }
 
 
