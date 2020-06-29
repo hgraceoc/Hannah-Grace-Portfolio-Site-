@@ -35,6 +35,17 @@ body {
     grid-area: contact;
 }
 
+.yella {
+    margin: auto;
+}
+
+.yella__text {
+    background-color: var(--orangeLight);
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
 
 footer {
     background-color: var(--cream);
@@ -53,7 +64,6 @@ body {
     'fade'
     'projects'
     'yella'
-    
     'fade2'
     'footer';
 }
