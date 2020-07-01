@@ -63,3 +63,7 @@ header {
 .footer__links a:hover {
 	color: var(--brownOrange);
 }
+
+.footerText {
+	text-align: center;
+}
