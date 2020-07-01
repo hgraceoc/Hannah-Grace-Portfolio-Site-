@@ -1,39 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie-edge">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
 
-        <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1”>
 
-        <meta name="description" content="This is a website about..">
-        <title>Hannah Grace</title>
-        <link rel="icon" href="#"/>
+    <meta name="description" content="This is a website about..">
+    <title>Hannah Grace</title>
+    <link rel="icon" href="../Personal Site/favicon.ico"/>
 
-        <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
-    </head>
-    
-    <body>
-        <header>
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <figure class="main-nav__figure">
+                <img class="logo" src="images/hbomb.png">
+            </figure>
             <nav>
-
+                <ul class="main-nav__links">
+                    <li><a href="#skillsLink">Skills</a></li>
+                    <li><a href="#projectsLink">Projects</a></li>
+                    <li><a href="#footerLink">Contact</a></li>
+                    <li><a href="https://www.hgraceoc.com/">Drawings</a></li>
+                </ul>
             </nav>
+        </div>
+    </header>
 
-        </header>
 
-        <section>
-            <img class="sun" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Sun_icon.svg" alt="sunshine">
+
+    <!--SECTION ONE-->
+    <section class="sunrise">
+
+        <div class="sunrise__text">
+            <h1 class="sunrise__h1">Junior Web Developer / Illustrator</h1>
+            <h2 class="sunrise__h2">Junior Front End Developer<br><br>Lover of design / Supporter of Eco Web Practices / Drawer of Plants </h2>
+        </div>
+
+        <div class="sun__container">
+            <!-- <img class = "sun" src="images/sun.svg"> -->
+        </div>
+
+        <svg></svg>
+        <!--rotating sun-->
+    </section>
+
+    <!--FADE-->
+    <div class="fade"></div>
+
+
+
+    <!--SECTION TWO-->
+    <section class="projects" id="projectsLink">
+        <!-- <h1 class="h1--brownOrange projects__h1
+        ">Recent Project Using React/Redux</h1> -->
+
+        <div class="projectOne">
+            <div class="projectOneImage">
+                <img class="projectImage" src="../Personal Site/images/Portfolio1.png">
+            </div>
+            <div class="projectOneText">
+                <h1>Develop Me Final Project</h1>
+                <h2>Random Team Generator</h2>
+                <p>Final Project for Develop Me Coding Fellowship. To create a Random Team Generator, built using React
+                    & Redux.
+                    Styled with CSS.
+                </p><br>
+                <a class="electricLink" href="https://hgraceoc.github.io/The-Electric-Game-/#/">The Electric Game..</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--SECTION THREE-->
+    <section class="yella" id="skillsLink">
+        <div class="projects">
+        <div class="projectTwo">
+
+            <div class="projectTwoText">
+                <h1>Skills</h1>
+                <p><span class="highlight">Develop Me Coding Bootcamp : Spring 2020</span><br><br>
+                    During the coding fellowship at Develop Me, I was taught the fundamentals of programming and best
+                    web practices. I have experience using HTML, CSS, JavaScript, Laravel, PHP, React & Redux<br><br><span class="highlight">
+                    Design Experience:</span><br><br>
+                    I also have experience working as a designer and illustrator for the past
+                </p>
+            </div>
+                <div class="projectOneImage">
+                    <img class="projectImage2" src="images/Yellow.jpg" alt=lovely lovely yellow flowers>
+                </div>
+        </div>
+    </div>
+    </section>
+
+    <!--FADE-->
+    <div class="fade2"></div>
+
+    <footer>
+        <section class="social" id="footerLink">
+            <ul class="footer__links">
+                <li><a href="https://github.com/hgraceoc">Github</a></li>
+                <li><a href="https://www.hgraceoc.com/">HGRACEOC illustration</a></li>
+                <li><a href="mailto:hgraceoc@gmail.com">Contact</a></li>
+            </ul>
+
         </section>
-        
+    </footer>
 
-
-
-        <footer>
-
-        </footer>
-
-    </body>
+</body>
 
 </html>
