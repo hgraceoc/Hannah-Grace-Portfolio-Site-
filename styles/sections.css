@@ -40,12 +40,12 @@ body {
     margin: auto;
     display: grid;
     grid-area: yella;
-    background-image: url("../images/")
+    align-self: center;
 }
 
 @media screen and (max-width: 370px) {
     .projects {
-      display: none;
+      visibility: hidden;
     }
   }
 
