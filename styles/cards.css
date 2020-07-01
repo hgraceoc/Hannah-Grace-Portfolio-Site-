@@ -1,7 +1,3 @@
-*, input, :before, :after {
-  box-sizing: border-box;
-  max-width: 100vw;
-}
 
 .projects {
     background-color: var(--orangeLight);
@@ -37,7 +33,7 @@
     align-self: center;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 550px) {
     .projectOne {
       display: none;
     }
@@ -61,6 +57,7 @@
     object-fit: contain;
 }
 
+
 .projectImage2 {
     width: 100%;
     height: 100%;
@@ -74,6 +71,7 @@
     margin: 1rem;
     align-self: center;
 }
+
 
 .electricLink {
     font-size: 1.5rem;

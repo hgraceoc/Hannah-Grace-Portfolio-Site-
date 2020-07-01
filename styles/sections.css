@@ -4,8 +4,13 @@
 
 body {
     background-color: var(--orangeMid);
-    width:100vw;
 }
+
+@media screen and (max-width: 370px) {
+    .body, html {
+      max-width: 100vw;
+    }
+  }
 
 
 .sunrise {
