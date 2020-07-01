@@ -25,12 +25,14 @@ header {
 
 .main-nav__figure {
 	flex-grow: 1;
+	padding-top: 1rem;
 }
 
 .main-nav__links {
 	display: flex;
-	font-size: 1.5rem;
+	font-size: calc(1.5rem + 3vmin);
 }
+
 
 .main-nav__links a {
 	margin: 0rem 1.5rem 0rem 1.5rem;
@@ -45,7 +47,6 @@ header {
 .logo {
 	max-width: 150px;
 	height: auto;
-	/* mask: ; */
 }
 
 .footer__links {

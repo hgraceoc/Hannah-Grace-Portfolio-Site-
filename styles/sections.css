@@ -22,7 +22,8 @@ body {
 }
 
 .sunrise__h1 {
-    margin: 2rem;
+    margin: 0.5rem;
+    line-height: 1.5;
 }
 
 .sunrise__h2 {
@@ -37,7 +38,16 @@ body {
 
 .yella {
     margin: auto;
+    display: grid;
+    grid-area: yella;
+    background-image: url("../images/")
 }
+
+@media screen and (max-width: 370px) {
+    .projects {
+      display: none;
+    }
+  }
 
 .yella__text {
     background-color: var(--orangeLight);
@@ -51,13 +61,13 @@ footer {
     background-color: var(--orangeLight);
     display: grid;
     grid-area: footer;
-    padding: 3rem 0rem 2rem;
+    padding: 3rem 0rem 2rem 1rem;
 }
 
 
 body {
     display: grid;
-    grid-template-rows: 200px 400px 300px 600px 600px 400px 250px;
+    grid-template-rows: 200px auto 300px auto auto 300px 250px;
     grid-template-areas:
     'header'
     'sun'
@@ -85,8 +95,3 @@ body {
     background-size:  8em 8em, 8em 8em;
     background-repeat: round; 
 }
-
-/* section - sunrise - orange mid 
-/* section - projects - orange light
-/* section - yellow orange
-/* section contact form - background image with colour block on top 

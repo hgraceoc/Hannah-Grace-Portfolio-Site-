@@ -9,7 +9,19 @@
     padding: 3rem;
     grid-area: projects;
     align-self: center;
+    justify-content: center;
 }
+
+.skills {
+    background-color: var(--orangeLight);
+    text-align: -webkit-center;
+    display: grid;
+    padding: 3rem;
+    margin: 1rem;
+    grid-area: projects;
+    align-self: center;
+}
+
 
 .projectOne {
     display: flex;
@@ -19,6 +31,11 @@
     box-sizing: border-box;
     max-width: 80vw;
     max-height: 80%;
+    border-color: var(--orangeLight);
+    border-width: 5px;
+    border-style: double;
+    align-self: center;
+
 }
 
 .projectTwo {
@@ -38,6 +55,11 @@
     height: 100%;
     object-fit: contain;
 }
+@media screen and (max-width: 370px) {
+    .projectImage {
+      display: none;
+    }
+  }
 .projectImage2 {
     width: 100%;
     height: 100%;
@@ -54,13 +76,14 @@
 
 .electricLink {
     font-size: 1.5rem;
-    color: var(--cream);
+    color: var(--brown);
 }
 
 .projectTwoText {
     min-width: 50%;
     flex: 0 1 50%;
     padding: 1rem;
+    margin-right: 1rem;
     align-self: center;
     background-color: var(--orangeLight);
 }
