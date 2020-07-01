@@ -5,7 +5,8 @@ body {
 }    
        
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem;
 }
 
 h2 {
@@ -18,6 +19,10 @@ h2 {
 
 .h1--cream {
     color: var(--cream);
+}
+
+p {
+    font-size: calc(12px + 1vmin);
 }
 
 .sunquote {
@@ -44,9 +49,13 @@ li a {
     font-family: 'Goudy', serif;
     text-decoration:none;
     color: var(--cream);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer__links li a {
     color: var(--brownOrange);
+}
+
+.highlight {
+    color: var(--brownOrange)
 }

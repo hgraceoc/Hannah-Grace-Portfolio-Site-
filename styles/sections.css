@@ -1,6 +1,6 @@
-* {
+*, *:before, *:after {
     box-sizing: border-box;
-}
+  }
 
 body {
     background-color: var(--orangeMid);
@@ -48,7 +48,7 @@ body {
 
 
 footer {
-    background-color: var(--cream);
+    background-color: var(--orangeLight);
     display: grid;
     grid-area: footer;
     padding: 3rem 0rem 2rem;
@@ -57,7 +57,7 @@ footer {
 
 body {
     display: grid;
-    grid-template-rows: 200px 400px 300px 600px 600px 300px 400px;
+    grid-template-rows: 200px 400px 300px 600px 600px 400px 250px;
     grid-template-areas:
     'header'
     'sun'

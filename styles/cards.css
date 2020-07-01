@@ -1,62 +1,70 @@
-*,
-*::before,
-*::after { 
+*, input, :before, :after {
   box-sizing: border-box;
 }
+
 .projects {
     background-color: var(--orangeLight);
-    text-align: center;
-    padding: 2rem;
+    text-align: -webkit-center;
     display: grid;
+    padding: 3rem;
     grid-area: projects;
+    align-self: center;
 }
 
-.projects__cards {
+.projectOne {
     display: flex;
-    margin: auto;
-    padding: 0;
+    min-height: 350px;
+    background-color: var(--orangeMid);
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: 80vw;
+    max-height: 80%;
 }
 
-.project__item {
-    display: flex;
+.projectTwo {
+    display: flex; 
+    box-sizing: border-box;
+    max-width: 80vw;
+}
+
+.projectOneImage {
+    min-width: 50%;
+    flex: 0 1 50%;
+    box-sizing: border-box;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.projectImage2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectOneText {
+    min-width: 50%;
+    flex: 0 1 50%;
     padding: 1rem;
+    margin: 1rem;
+    align-self: center;
 }
 
-.project__card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.electricLink {
+    font-size: 1.5rem;
+    color: var(--cream);
 }
 
-.project__content {
-    display: flex;
-    flex: 1 1 1 auto;
-    flex-direction: column;
+.projectTwoText {
+    min-width: 50%;
+    flex: 0 1 50%;
     padding: 1rem;
+    align-self: center;
+    background-color: var(--orangeLight);
 }
 
-.project__image {
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    width:350px;
-    height: 250px;
-    margin: auto;
-}
-
-.project__image1 {
-    background-image: url("../images/hgraceocsite.png");
-}
-
-.project__title {
-   
-}
-
-.project__desc {
-    padding: 1rem;
-}
 
 @media (max-width: 800px) {
     .project__item3 {
