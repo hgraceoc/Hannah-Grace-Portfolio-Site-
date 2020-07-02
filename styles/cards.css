@@ -45,6 +45,12 @@
     max-width: 80vw;
 }
 
+@media screen and (max-width: 370px) {
+    .projectTwo {
+        max-width: unset;
+    }
+  }
+
 .projectOneImage {
     min-width: 50%;
     flex: 0 1 50%;
@@ -88,10 +94,5 @@
 }
 
 
-@media (max-width: 800px) {
-    .project__item3 {
-      display: none;
-    }
-  }
 
 

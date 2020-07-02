@@ -43,12 +43,6 @@ body {
     align-self: center;
 }
 
-@media screen and (max-width: 370px) {
-    .projects {
-      visibility: hidden;
-    }
-  }
-
 .yella__text {
     background-color: var(--orangeLight);
     width: 400px;
