@@ -12,7 +12,6 @@ body {
     }
   }
 
-
 .sunrise {
     padding: 2rem;
     text-align: end;
@@ -50,14 +49,12 @@ body {
     position: relative;
 }
 
-
 footer {
     background-color: var(--orangeLight);
     display: grid;
     grid-area: footer;
     padding: 3rem 0rem 2rem 1rem;
 }
-
 
 body {
     display: grid;
