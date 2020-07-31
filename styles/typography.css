@@ -1,11 +1,11 @@
 
 body {
     color: var(--cream);
-    font-family: 'Goudy', serif;
+    font-family:'Cooper,Georgia,Times,Times New Roman,serif';
 }    
 
 .altFont {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:"Arial";
 }
        
 h1 {
@@ -28,16 +28,15 @@ h2 {
 }
 
 p {
-    font-size: calc(12px + 1vmin);
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: "Cooper,Georgia,Times,Times New Roman,serif";
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 li a {
-    font-family: 'Goudy', serif;
+    font-family: "Cooper,Georgia,Times,Times New Roman,serif";
     text-decoration:none;
     color: var(--cream);
-    font-size: 1.5rem;
 }
 
 .footer__links li a {
@@ -50,4 +49,14 @@ li a {
 
 .darkHighlight {
     color: var(--brownOrange2);
+}
+
+.sunrise__h1 {
+    margin: 0.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.sunrise__h2 {
+    margin: 2rem;
 }

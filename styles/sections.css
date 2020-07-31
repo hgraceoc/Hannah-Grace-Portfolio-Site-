@@ -1,88 +1,161 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
+html {
+    box-sizing:border-box;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    overflow-x: hidden;
+}
+
+*,*:before,*:after {
+    box-sizing:inherit
+}
 
 body {
     background-color: var(--orangeMid);
 }
 
-@media screen and (max-width: 370px) {
-    .body, html {
-      max-width: 100vw;
-    }
-  }
-
-.sunrise {
-    padding: 2rem;
-    text-align: end;
-    display: grid;
-    grid-area: sun;
-    background-image: url('/images/sun.svg');
-}
-
-.sunrise__h1 {
-    margin: 0.5rem;
-    line-height: 1.5;
-}
-
-.sunrise__h2 {
-    margin: 2rem;
-}
-
-.yellow-orange {
-    background-color: var(--yellowOrange);
-    display: grid;
-    grid-area: contact;
-}
-
-.yella {
-    margin: auto;
-    display: grid;
-    grid-area: yella;
-    align-self: center;
-}
-
-.yella__text {
-    background-color: var(--orangeLight);
-    width: 400px;
-    height: 300px;
-    position: relative;
-}
-
-footer {
-    background-color: var(--orangeLight);
-    display: grid;
-    grid-area: footer;
-    padding: 3rem 0rem 2rem 1rem;
-}
-
-body {
-    display: grid;
-    grid-template-rows: 200px auto 300px auto auto 300px 250px;
-    grid-template-areas:
-    'header'
-    'sun'
-    'fade'
-    'projects'
-    'yella'
-    'fade2'
-    'footer';
-}
-
 .fade {
+    min-height: 200px;
     background-color: var(--yellowOrange);
-    grid-area: fade;
     background: linear-gradient(-135deg, transparent 75%, var(--brownOrange) 75%),
     linear-gradient(135deg, transparent 75%, var(--orangeLight) 75%);
-    background-size:  8em 8em, 8em 8em;
+    background-size:  6em 6em, 6em 6em;
+    background-repeat: round; 
+}
+
+.fade1 {
+    min-height: 200px;
+    background-color: var(--yellowOrange);
+    background: linear-gradient(-135deg, transparent 75%, var(--brownOrange) 75%),
+    linear-gradient(135deg, transparent 75%, var(--orangeLight) 75%);
+    background-size:  6em 6em, 6em 6em;
     background-repeat: round; 
 }
 
 .fade2 {
+    min-height: 200px;
     background-color: var(--yellowOrange);
-    grid-area: fade2;
     background: linear-gradient(-135deg, transparent 75%, var(--orangeLight) 75%),
     linear-gradient(135deg, transparent 75%, var(--cream) 75%);
     background-size:  8em 8em, 8em 8em;
     background-repeat: round; 
+}
+
+/* nav */
+.main-nav {
+    display: block;
+    overflow-x: auto;
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+.main-nav__figure {
+	flex-grow: 1;
+	padding-top: 1rem;
+}
+
+.main-nav__links {
+	display: block;
+    font-size: 1.5rem;
+    justify-self: end;
+    padding-top: 1rem;
+}
+
+.main-nav__links a {
+	margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.main-nav__links a:hover {
+	color: var(--brownOrange);
+}
+
+.logo {
+	max-width: 150px;
+    height: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+/* footer */
+footer {
+    background-color: var(--orangeLight);
+    padding: 3rem 0rem 2rem 1rem;
+}
+
+.footer__links {
+	font-size: 1.5rem;
+	justify-content: space-around;
+	padding: 2rem 0rem 0rem 0rem;
+}
+
+.footer__links a {
+	border-bottom: 2px solid var(--cream);
+    padding: 0rem 0rem 2rem 0rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer__links a:hover {
+	color: var(--brownOrange);
+}
+
+.footerText {
+	text-align: center;
+	padding: 1rem;
+}
+
+
+@media (max-width:700px) {
+    .projectImage2 {
+        display: none;
+    }
+    .sunrise__h1 {
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:700px) {
+    .fade {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        padding-top:1rem;
+    }
+    .nav {
+        justify-content: flex-end;
+    }
+    .main-nav__links {
+        display: flex;
+    }
+    .main-nav__figure {
+        padding: 0rem;
+    }
+    .logo {
+        padding: 0rem;
+        display: table-footer-group;
+    }
+    .sunrise__h1 {
+        text-align: right;
+        padding-right:1rem;
+        padding-bottom: 4rem;
+    }
+    .projectTwo{
+        display: flex;
+    }
+    .projectOneImage {
+        padding: 1rem;
+        max-width: 50vw;
+    }
+    .footer__links a {
+        display: flex;
+    }
+
 }

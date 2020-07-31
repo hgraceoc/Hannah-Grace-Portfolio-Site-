@@ -2,59 +2,43 @@
 .projects {
     background-color: var(--orangeLight);
     text-align: -webkit-center;
-    display: grid;
-    padding: 3rem;
-    grid-area: projects;
+    width: 100%;
+    padding: 1rem;
     align-self: center;
     justify-content: center;
+    display: flex;
 }
 
 .skills {
     background-color: var(--orangeLight);
     text-align: -webkit-center;
-    display: grid;
-    padding: 3rem;
     margin: 1rem;
-    grid-area: projects;
-    align-self: center;
+    align-self: center;  
 }
 
+
 .projectOne {
-    display: flex;
+    display: block;
     min-height: 350px;
     background-color: var(--orangeMid);
-    padding: 2rem;
     box-sizing: border-box;
-    max-width: 80vw;
+    max-width: 90vw;
     max-height: 80%;
     border-color: var(--orangeLight);
     border-width: 5px;
     border-style: double;
     align-self: center;
+    padding: 0.5rem;
 }
-
-@media screen and (max-width: 550px) {
-    .projectOne {
-      display: none;
-    }
-  }
 
 .projectTwo {
-    display: flex; 
     box-sizing: border-box;
-    max-width: 80vw;
+    max-width: 100vw;
+    padding: 0.5rem;
 }
 
-@media screen and (max-width: 370px) {
-    .projectTwo {
-        max-width: fit-content;
-    }
-  }
-
 .projectOneImage {
-    min-width: 50%;
-    flex: 0 1 50%;
-    box-sizing: border-box;
+    width:100%;
 }
 
 .projectImage {
@@ -72,7 +56,6 @@
 .projectOneText {
     min-width: 50%;
     flex: 0 1 50%;
-    padding: 1rem;
     margin: 1rem;
     align-self: center;
 }
@@ -85,8 +68,8 @@
 .projectTwoText {
     min-width: 50%;
     flex: 0 1 50%;
-    padding: 1rem;
     margin-right: 1rem;
+    padding: 1rem;
     align-self: center;
     background-color: var(--orangeLight);
 }
