@@ -85,7 +85,7 @@ li {
 /* footer */
 footer {
     background-color: var(--orangeLight);
-    padding: 3rem 0rem 2rem 1rem;
+    padding: 3rem 0rem 2rem 3rem;
 }
 
 .footer__links {
