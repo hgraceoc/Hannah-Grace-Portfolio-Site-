@@ -67,7 +67,7 @@ li {
 }
 
 .main-nav__links a {
-	margin: 0rem 1.5rem 0rem 1.5rem;
+    margin: 0rem 1.5rem 0rem 1.5rem;
 }
 
 .main-nav__links a:hover {
@@ -79,7 +79,7 @@ li {
     height: auto;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    padding-left: 1rem;
+    
 }
 
 /* footer */
@@ -96,9 +96,9 @@ footer {
 
 .footer__links a {
 	border-bottom: 2px solid var(--cream);
-    padding: 0rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 1rem 0rem;
     display: inline-block;
-    text-align: center;
+    justify-content: center;
 }
 
 .footer__links a:hover {
@@ -116,7 +116,17 @@ footer {
         display: none;
     }
     .sunrise__h1 {
-        padding-top: 1.5rem;
+        padding-top: 3rem;
+    }
+    .main-nav__links {
+        font-size: 1.5rem;
+        justify-content: space-around;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .main-nav__links a {
+        border-bottom: 2px solid var(--brownOrange);
+        padding: 0rem 0rem 1rem 0rem;
+        display: block;
     }
 }
 
