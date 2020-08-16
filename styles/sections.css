@@ -13,6 +13,7 @@ body {
     background-color: var(--orangeMid);
 }
 
+
 .fade {
     min-height: 200px;
     background-color: var(--yellowOrange);
@@ -36,18 +37,18 @@ body {
     background-color: var(--yellowOrange);
     background: linear-gradient(-135deg, transparent 75%, var(--orangeLight) 75%),
     linear-gradient(135deg, transparent 75%, var(--cream) 75%);
-    background-size:  8em 8em, 8em 8em;
+    background-size:  6em 6em, 6em 6em;
     background-repeat: round; 
 }
 
 /* nav */
 .main-nav {
-    display: block;
     overflow-x: auto;
     padding: 1rem;
     width: 100%;
     overflow: hidden;
     text-align: center;
+    display: flex;
 }
 
 li {
@@ -55,15 +56,13 @@ li {
 }
 
 .main-nav__figure {
-	flex-grow: 1;
-	padding-top: 1rem;
+    text-align: -webkit-center;
 }
 
 .main-nav__links {
-	display: block;
     font-size: 1.5rem;
-    justify-self: end;
     padding-top: 1rem;
+    display: flex;
 }
 
 .main-nav__links a {
@@ -77,27 +76,24 @@ li {
 .logo {
 	max-width: 150px;
     height: auto;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    
+    margin-top: 2rem;  
 }
 
 /* footer */
 footer {
     background-color: var(--orangeLight);
-    padding: 3rem 0rem 2rem 3rem;
 }
 
 .footer__links {
 	font-size: 1.5rem;
 	justify-content: space-around;
-	padding: 2rem 0rem 0rem 0rem;
+	padding: 2rem 0rem 2rem 0rem;
 }
 
 .footer__links a {
 	border-bottom: 2px solid var(--cream);
     padding: 0rem 0rem 1rem 0rem;
-    display: inline-block;
+    display: flex;
     justify-content: center;
 }
 
@@ -122,11 +118,15 @@ footer {
         font-size: 1.5rem;
         justify-content: space-around;
         padding: 2rem 0rem 0rem 0rem;
+        display: block;
     }
     .main-nav__links a {
         border-bottom: 2px solid var(--brownOrange);
         padding: 0rem 0rem 1rem 0rem;
         display: block;
+    }
+    .main-nav {
+        justify-content: center;
     }
 }
 
@@ -135,15 +135,11 @@ footer {
         display: none;
     }
     .main-nav {
-        display: flex;
         justify-content: center;
         padding-top:1rem;
     }
     .nav {
         justify-content: flex-end;
-    }
-    .main-nav__links {
-        display: flex;
     }
     .main-nav__figure {
         padding: 0rem;
@@ -153,7 +149,6 @@ footer {
         display: table-footer-group;
     }
     .sunrise__h1 {
-        text-align: right;
         padding-right:1rem;
         padding-bottom: 4rem;
     }
@@ -163,9 +158,6 @@ footer {
     .projectOneImage {
         padding: 1rem;
         max-width: 50vw;
-    }
-    .footer__links a {
-        display: flex;
     }
 
 }
