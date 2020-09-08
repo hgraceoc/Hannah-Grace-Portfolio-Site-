@@ -65,7 +65,6 @@ li a {
     margin: 2rem;
 }
 
-/* Page 2*/
-.page2font {
-    color: var(--pink);
+.blueLink {
+     color:  rgb(69, 118, 153)
 }
