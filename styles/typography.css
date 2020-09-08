@@ -66,4 +66,6 @@ li a {
 }
 
 /* Page 2*/
-
+.page2font {
+    color: var(--pink);
+}

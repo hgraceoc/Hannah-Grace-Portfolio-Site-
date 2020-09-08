@@ -17,13 +17,17 @@
 }
 
 :root {
-    --orangeLight:rgb(252, 188, 132);
-    --orangeMid:rgb(247, 167, 110) ;
-    --brownOrange:rgb(214, 153, 109) ;
-    --brownOrange2:rgb(170, 116, 77) ;
-    --yellowOrange:rgb(223, 171, 82) ;
-    --cream: rgb(253, 242, 223);
-    --brown: rgb(102, 82, 42);
+    --orangeLight:rgb(44, 88, 119);
+    --orangeMid: rgb(69, 118, 153);
+    --brownOrange:rgb(238, 203, 219);
+    --brownOrange2:rgb(252, 237, 213);
+    --yellowOrange:rgb(223, 171, 82);
+    --cream:  rgb(238, 203, 219);
+    --brown: rgb(252, 237, 213);
+
+
+    --teal: rgb(69, 118, 153);
+    --pink: rgb(221,191,205);
 }
 
 :root {
@@ -33,4 +37,8 @@
 body {
     background-color:var(--orangeMid);
     font-family: 'Ovo', serif;
+}
+
+.page2 {
+    background-color:var(--teal);
 }
