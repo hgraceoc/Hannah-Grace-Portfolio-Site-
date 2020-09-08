@@ -5,11 +5,14 @@ body {
 }    
 
 .altFont {
-    font-family:"Arial";
+    font-family:'Ovo', Serif;
+    font-size: 1.5rem;
 }
        
 h1 {
-    font-size: 2em;
+    font-family:'Playfair Display', Serif;
+    font-size: 3em;
+    font-weight: bold;
     padding: 0.5rem;
     margin: 0.5rem;
 }
@@ -28,13 +31,13 @@ h2 {
 }
 
 p {
-    font-family: "Cooper,Georgia,Times,Times New Roman,serif";
+    font-family: 'Quattrocento Sans', Sans-Serif;;
     line-height: 1.4;
     font-size: 1.5rem;
 }
 
 li a {
-    font-family: "Cooper,Georgia,Times,Times New Roman,serif";
+    font-family: 'Quattrocento Sans', Sans-Serif;;
     text-decoration:none;
     color: var(--cream);
 }
@@ -53,7 +56,7 @@ li a {
 
 .sunrise__h1 {
     padding-top: 2rem;
-    margin: 0.5rem;
+    margin: 1rem;
     line-height: 1.5;
     text-align: center;
 }
@@ -61,3 +64,6 @@ li a {
 .sunrise__h2 {
     margin: 2rem;
 }
+
+/* Page 2*/
+
