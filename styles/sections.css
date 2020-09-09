@@ -159,5 +159,8 @@ footer {
         padding: 1rem;
         max-width: 50vw;
     }
+    p {
+        max-width: 60%;
+    }
 
 }
